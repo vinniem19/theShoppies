@@ -1,21 +1,25 @@
 import React from 'react';
+import '../Search';
 import './style.css'
+
+
 
 
 function DisplayResults (props) {
     return (
         <div>
-            <div className="row" >
-                <div className="col-md-6" id="results-box">
-                <h2>Movie Results</h2>
+            
+                <div className="row">
+                    <div className="col-md-6">
+                    <h3>{props.movieTitle} ({props.movieYear})</h3><button>Nominate</button>
+                    </div>
                 </div>
+            
 
-                <div className="col-md-6" id="nomination-box">
-                <h2>Nominations</h2>
-                </div>
+                
             </div>
 
-        </div>
+        
     )
 }
 

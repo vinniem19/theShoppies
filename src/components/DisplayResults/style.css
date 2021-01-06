@@ -1,7 +1,15 @@
 #results-box {
     min-height: 300px;
+    border: 2px solid black;
+    background: #f2f2f2;
 }
 
 #nomination-box {
     min-height: 300px;
+    border: 2px solid black;
+    background: #f2f2f2;
+}
+
+h2 {
+    background: blue;
 }
