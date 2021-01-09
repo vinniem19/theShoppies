@@ -1,6 +1,5 @@
 #search-label {
-    
-    color: green;
+    color: rgb(250, 251, 250);
    }
 
 h1 {
@@ -8,11 +7,8 @@ h1 {
 }
 
 #search-field {
-    
     width: 260px;
 }
-
-
 
 #btn-submit {
     width: 100px;
@@ -25,4 +21,8 @@ h1 {
 
 #btn-submit:hover {
     opacity: 70%;
+}
+
+form {
+    margin-bottom: 100px;
 }

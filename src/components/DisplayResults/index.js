@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Search';
-import './style.css'
+//import './style.css'
 
 
 
@@ -10,8 +10,8 @@ function DisplayResults (props) {
         <div>
             
                 <div className="row">
-                    <div className="col-md-6">
-                    <h3>{props.movieTitle} ({props.movieYear})</h3><button>Nominate</button>
+                    <div className="col-md-6" id="display-results">
+                    <h3>{props.movieTitle} ({props.movieYear})</h3><button onClick={props.nominate}>Nominate</button>
                     </div>
                 </div>
             

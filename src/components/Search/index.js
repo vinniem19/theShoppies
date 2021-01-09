@@ -33,13 +33,16 @@ class Search extends React.Component {
     })
   }
 
+  nominate = (event) => {
+    event.preventDefault();
+    
+    console.log("I was clicked.")
+  }
+
   render() {
     return (
 <div>
-    <div className="wrapper">
-
-<div className="row">
-  <h1>The Shoppies</h1>
+    
 
   <form>
       <div className="col-md-2">
@@ -54,10 +57,10 @@ class Search extends React.Component {
   <input type="submit" id="btn-submit" value="Submit" onClick={this.handleSubmit} />
     </div>
 </form>
-  </div>
-  <div className="row">
+
+  
     <h1>Movie Names:</h1>
-  </div>
+
      {this.state.results.map(movie =>( 
     //console.log(movie.Title)
     
@@ -67,6 +70,7 @@ class Search extends React.Component {
         movieTitle={movie.Title} 
         movieYear={movie.Year} 
         key={movie.imdbID}
+        nominate={this.nominate}
           /> 
           
      ))
@@ -77,7 +81,6 @@ class Search extends React.Component {
       </div>
       
 
-  </div>
 </div>
         );
     }
